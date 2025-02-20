@@ -38,12 +38,17 @@ users_list = []
 user1 = User ("n001", "Василий")
 user2 = User ("n002", "Мария")
 user3 = User ("n003", "Николай")
+user4 = User ("n004", "Егор")
+user5 = User ("n005", "Анна")
 
-admin = Admin ("a001", "Александр")
+admin1 = Admin ("a001", "Александр")
+admin2 = Admin ("a002", "Владимир")
 
 print("Имя пользователя:", user2.get_name())
-admin.add_user(users_list, user1)
-admin.add_user(users_list, user2)
+admin1.add_user(users_list, user1)
+admin1.add_user(users_list, user2)
+admin2.add_user(users_list, user3)
+admin2.add_user(users_list, user4)
 
 print("Список пользователей:")
 for user in users_list:
